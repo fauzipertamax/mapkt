@@ -1,0 +1,143 @@
+	body{
+	background: #DCDDDF url(image/8.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+			}
+			.border,
+			.rain{
+				height: 170px;
+				width: 320px;
+			}
+			/* Layout with mask */
+			.rain{
+				 padding: 12px 30px 125px 30px;
+				/*  -moz-box-shadow: 10px 10px 10px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset;
+				 -webkit-box-shadow: 8px 8px 8px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset;
+				 box-shadow: 8px 8px 8px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset; */
+				 margin: 105px auto;
+			}
+			/* Artifical "border" to clear border to bypass mask */
+			.border{
+				padding: 1px;
+				-moz-border-radius: 5px;
+			    -webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+
+			.border,
+			.rain,
+			.border.unfocus{
+				background: transparent !important;	
+				 -moz-box-shadow: 0px 0px 15px rgba(3,11,29,1);
+				 -webkit-box-shadow: 0px 0px 15px rgba(255,255,255,.2);
+				 box-shadow: 0px 0px 15px rgba(19,40,155,1);
+				 -webkit-animation-name: none;
+			}
+			
+			/* Keyfram-licious animation */
+			@-webkit-keyframes colors {
+			    0% {background-color: #39f;}
+			    15% {background-color: #F246C9;}
+			    30% {background-color: #4453F2;}
+			    45% {background-color: #44F262;}
+			    60% {background-color: #F257D4;}
+			    75% {background-color: #EDF255;}
+			    90% {background-color: #F20006;}
+			    100% {background-color: #39f;}
+		    }
+		    .border,.rain{
+			    -webkit-animation-direction: normal;
+			    -webkit-animation-duration: 20s;
+			    -webkit-animation-iteration-count: infinite;
+			    -webkit-animation-name: colors;
+			    -webkit-animation-timing-function: ease;
+		    }
+
+			.logo img{
+			width:320px;
+			height:85px;
+			}
+		    
+		    /* In-Active State Style */
+
+			
+			/* Regular Form Styles */
+			form{
+				background: transparent;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+			    border-radius: 5px;
+				height: 100%;
+				width: 100%;
+/* 				background: -moz-radial-gradient(50% 46% 90deg,circle closest-corner, #242424, #090909);
+				background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#242424), to(#090909)); */
+			}
+			form label{
+				display: block;
+				padding: 10px 5px 0px 15px;
+				font-size: 14px;
+				color: #000;
+			}
+			form input{
+				display: block;
+				margin: 5px 10px 5px 15px;
+				width: 85%;
+				-webkit-border-radius:4px;
+				-moz-border-radius:4px;
+				border-radius:4px;
+				-webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+				-moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+				box-shadow: 0px 0px 4px #000 inset;
+				background: rgba(255,255,255,0.5);
+				border:none;
+				/* outline: 0.5px solid #333; */
+				padding: 5px;
+				color: #444;
+				font-size: 14px;
+				-webkit-appearance:none;
+				-moz-appearance:none;
+				appearance:none;
+			}
+			form select{
+				display: block;
+				margin: 5px 10px 10px 15px;
+				width: 89%;
+				-webkit-border-radius:4px;
+				-moz-border-radius:4px;
+				border-radius:4px;
+				-webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+				-moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+				box-shadow: 0px 0px 4px #000 inset;
+				background: rgba(255,255,255,0.5);
+				border:none;
+				/* outline: 0.5px solid #333; */
+				padding:5px;
+				color: #444;
+				font-size: 14px;
+				-webkit-appearance:none;
+				-moz-appearance:none;
+				appearance:none;
+				cursor:pointer;
+			}
+			/* form input:focus{
+				outline: 1px solid #555;
+				color: #000;
+			} */
+			input[type="button"]{
+				color: #000;
+				padding: 5px 5px 5px 5px;
+				width:50%;
+				margin: 5px 20px 10px 15px;
+				float: right;
+			/* 	outline: 0px solid #333;
+				border: 1px solid #000; */
+				font-weight: lighter;
+				-moz-border-radius: 15px;
+			    -webkit-border-radius: 15px;
+				border-radius: 15px;
+				background: rgba(255,255,255,0.7);
+				cursor: pointer;
+				/* text-shadow: 0 1px 1px #000; */
+			}
